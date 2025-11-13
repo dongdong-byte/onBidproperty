@@ -1,6 +1,8 @@
 package kim.onbidproperty.domain;
 
 
+import kim.onbidproperty.enums.BidStatus;
+import kim.onbidproperty.enums.ResultStatus;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -29,8 +31,8 @@ private LocalDateTime auctionResultTime;//개찰일시
 //    입찰설정
     private BigDecimal depositRate ;//    입찰 보증금율
 //    상태
-    private String bidStatus;//    입찰상태(PENDING/ONGOING/COMPLETED/FAILED)
-    private String resultStatus;//    낙찰상태(SUCCESS/FAIL/CANCEL)
+    private BidStatus bidStatus;//    입찰상태(PENDING/ONGOING/COMPLETED/FAILED) String → BidStatus ENUM
+    private ResultStatus resultStatus;//    낙찰상태(SUCCESS/FAIL/CANCEL) String → ResultStatus ENUM
 //    메타
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;

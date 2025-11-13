@@ -1,6 +1,8 @@
 package kim.onbidproperty.domain;
 
 
+import kim.onbidproperty.enums.PropertyStatus;
+import kim.onbidproperty.enums.SalesType;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -34,8 +36,8 @@ public class Property {
 
 //    상태
     private  String pbctStatus;//    물건상태
-    private  String saleType;//    판매 방식(AUCTION/DIRECT)
-    private String status;//    시스템상태(AVAILABLE/SOLD/...)
+    private SalesType saleType;//    판매 방식(AUCTION/DIRECT) String → SaleType ENUM
+    private PropertyStatus status;//    시스템상태(AVAILABLE/SOLD/...) String → PropertyStatus ENUM
 //    통계
     private Integer viewCount;//    조회수
     private Integer bidCount;//    입찰수
