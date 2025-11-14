@@ -34,7 +34,11 @@ dependencies {
     /* =====================================
      🗂️ 2. MyBatis & DB 연동
      ===================================== */
-    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.5'  // MyBatis-Spring 통합
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.5'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+
+//    WebClient 의존성
+    testImplementation 'io.projectreactor:reactor-test'// MyBatis-Spring 통합
     runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'                           // MariaDB JDBC 드라이버
 
     /* =====================================
