@@ -68,6 +68,8 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'      // JUnit, Mockito 등 포함
     testImplementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter-test:3.0.5'  // MyBatis 테스트 지원
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'                // JUnit 플랫폼 실행기
+    // ModelMapper
+    implementation 'org.modelmapper:modelmapper:3.1.1'
 }
 
 tasks.named('test') {
